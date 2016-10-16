@@ -1,0 +1,29 @@
+{
+  "name": "gitcm",
+  "version": "0.1.0",
+  "description": "Git Config Manager",
+  "main": "gitcm.sh",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suniaoo/gitcm.git"
+  },
+  "keywords": [
+    "git",
+    "config",
+    "git-config",
+    "user.name",
+    "user.email"
+  ],
+  "author": "sunxiaobo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suniaoo/gitcm/issues"
+  },
+  "homepage": "https://github.com/suniaoo/gitcm#readme"
+}
