@@ -15,21 +15,21 @@
  - [License](#license)
 
 ## Introduce
-Gitcm is a tool to help you manager gitconfig. In v0.x versions, It mainlly to solve one problem: auto config the `user.name` and `user.email` for your git repository.
-Why we need to solve this problem? think about this, we use company email and name to commit code in company, but not want use same infomation commit code to such as github and someone else. Surely you could change diretory to your git repository and use `git config ...`, but if you forgot then something wrong may happeded. So let's use gitcm to avoid the problem.
+Gitcm is a tool manager your gitconfig. In v0.x versions, It's mainly to solve one problem: auto configure `user.name` and `user.email` for your git repository.
+Why need to solve this problem? think about this, we use company email and name to commit code in work time, but not want use same configuration at lease `user.name` and `user.email` to commit code such as github or someone else. Surely you could change diretory to your git repository and use `git config ...`, but if you forgot then something wrong may happeded. So let's use gitcm to avoid the problem.
 
 ### How it works
-We know that when commit code, git will lookup configuration from these places: `.git/config`, `$HOME/.gitconfig`, `/etc/gitconfig`. If `$HOME/.gitconfig` is used for company, and we create a new project in `$HOME/github/awesome_project `, aftet push code to remote repository found forgot to config user.name and user.email, your company email and name list in your git log, so sad. 
-Gitcm will find .gitcmrc in current path or parents path, if found, user.name and user.email would be config to your current git repository by commands. If you are using zsh, through some code in .zshrc, gitcm will auto affect git config without use commands.
+We know that when commit code, git will lookup configuration from these places: `.git/config`, `$HOME/.gitconfig`, `/etc/gitconfig`. If `$HOME/.gitconfig` is used for company, and we create a new project in `$HOME/github/awesome_project `, after push code to remote repository and then found forgot to configure user.name and user.email, thus your company email and name list in your git log, so sad. - -
+Gitcm will find .gitcmrc in current path or parents path, if found, `user.name` and `user.email` would be configured to your current git repository by commands. If you are using zsh, through some code in .zshrc, gitcm will auto affect git config without use commands.
 
 ### Support platform
-Gitcm support `Linux` and Linux like system such as MacOS, not support window for now.
+Gitcm supports `Linux` and Linux like system such as MacOS, not supports window for now.
 
 ## Installation
-Gitcm don't need other dependencies, you can use below methods to ininstall gitcm.
+Gitcm doesn't need other dependencies, you can use below methods to ininstall gitcm.
 
 ### Install script
-To install gitcm, you can use the [install script]() using cURL:
+To install gitcm, you can use the [install script](https://raw.githubusercontent.com/suniaoo/gitcm/master/install.sh) using cURL:
 
 ```sh
 curl -o- https://raw.githubusercontent.com/suniaoo/gitcm/master/install.sh  | bash
