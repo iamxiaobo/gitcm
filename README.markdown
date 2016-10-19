@@ -20,7 +20,7 @@ Why need to solve this problem? think about this, we use company email and name 
 
 ### How it works
 We know that when commit code, git will lookup configuration from these places: `.git/config`, `$HOME/.gitconfig`, `/etc/gitconfig`. If `$HOME/.gitconfig` is used for company, and we create a new project in `$HOME/github/awesome_project `, after push code to remote repository and then found forgot to configure user.name and user.email, thus your company email and name list in your git log, so sad. - -
-Gitcm will find .gitcmrc in current path or parents path, if found, `user.name` and `user.email` would be configured to your current git repository by commands. If you are using zsh, through some code in .zshrc, gitcm will auto affect git config without use commands.
+Gitcm will find .gitcmrc in current path or parents path, if found, `user.name` and `user.email` would be configured to your current git repository by commands. If you are using zsh, through some code in .zshrc, gitcm will auto affect git config without by commands.
 
 ### Support platform
 Gitcm supports `Linux` and Linux like system such as MacOS, not supports window for now.
@@ -80,7 +80,7 @@ which should output 'gitcm' if the installation was successful. Please note that
 
 
 ## Usage
-First, you need a .gitcmrc file in your directory. For example, your work directory is `~/work`, there are many project in this diretory, usually you need do `git cnofig` for each project in their directory. Also your personal direcyory is `~/dev`, you need to `git config` for each project too.Through gitcm, just need a .gitcmrc file in your `~/work` with the user.name and user.email used for your company, and another .gitcmrc file in `~/dev` config the user.name and user.email for your personal. then just commit your code without doubt.
+First, you need a .gitcmrc file in your directory. For example, your work directory is `~/work`, there are many project in this diretory, usually you need do `git cnofig` for each project in their directory. Also your personal direcyory is `~/dev`, you need to `git config` for each project too.Through gitcm, just need a .gitcmrc file in your `~/work` with the user.name and user.email used for your company, and another .gitcmrc file in `~/dev` config the user.name and user.email for your personal. then just commit your code safely
 
 To init gitcm config, do this:
 ```sh
