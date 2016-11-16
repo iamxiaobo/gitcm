@@ -1,6 +1,6 @@
 {
   "name": "gitcm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Git Config Manager",
   "main": "gitcm.sh",
   "directories": {
